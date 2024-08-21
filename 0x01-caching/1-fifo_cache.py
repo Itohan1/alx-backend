@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-""""""
+"""
+   A class FIFOCache that inherits
+   from BaseCaching and is a caching system
+"""
 BaseCaching = __import__("base_caching").BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """"""
+    """Caches FIFO"""
 
     def __init__(self):
         """Overloading"""
