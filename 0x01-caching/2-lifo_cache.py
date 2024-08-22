@@ -44,7 +44,7 @@ class LIFOCache(BaseCaching):
            key discarded and following by a new line
         """
 
-        if key and item is None:
+        if key is None or item is None:
             return
 
         if key in self.cache_data:
