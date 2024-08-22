@@ -40,7 +40,10 @@ class LRUCache(BaseCaching):
         self.order.append(key)
 
     def get(self, key):
-        """"""
+        """
+            Must return the value in
+            self.cache_data linked to key
+        """
 
         if key is None or key not in self.cache_data:
 
