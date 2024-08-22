@@ -52,7 +52,7 @@ class LIFOCache(BaseCaching):
         elif len(self.cache_data) >= BaseCaching.MAX_ITEMS:
             d_key = self.order.pop()
             del self.cache_data[d_key]
-            print(f"DISCARD {d_key}")
+            print(f"DISCARD: {d_key}")
 
         self.cache_data[key] = item
         self.order.append(key)
