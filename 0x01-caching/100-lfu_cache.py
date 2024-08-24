@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Discard the least frequency used item (LFU algorithm)"""
+"""
+    Discard the least frequency
+    used item (LFU algorithm)
+"""
 from collections import defaultdict, OrderedDict
 BaseCaching = __import__("base_caching").BaseCaching
 
