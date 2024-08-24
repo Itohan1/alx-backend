@@ -32,7 +32,7 @@ class LRUCache(BaseCaching):
             self.order.remove(key)
 
         elif len(self.cache_data) >= BaseCaching.MAX_ITEMS:
-            d_key = self.order.pop(-1)
+            d_key = self.order.pop(0)
             del self.cache_data[d_key]
             print(f"DISCARD: {d_key}")
 
