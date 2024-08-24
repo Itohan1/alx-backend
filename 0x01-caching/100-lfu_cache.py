@@ -5,7 +5,10 @@ BaseCaching = __import__("base_caching").BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """"""
+    """
+        Use self.cache_data - dictionary
+        from the parent class BaseCaching
+    """
 
     def __init__(self):
         """Initialize and overload the parent class"""
