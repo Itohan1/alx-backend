@@ -7,7 +7,7 @@ babel = Babel(app)
 
 
 class Config:
-    """Config for Flask app"""
+    """Config for Flask app  to determine the best match"""
 
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
@@ -25,7 +25,7 @@ def get_locale():
 
 @app.route("/")
 def first_method():
-    """html template"""
+    """To provide the correct display for each message"""
 
     return render_template('3-index.html')
 
