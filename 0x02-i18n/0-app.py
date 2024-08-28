@@ -5,8 +5,9 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def first_method():
+def first_meth():
     """First you will setup a basic"""
+
     return render_template('0-index.html')
 
 

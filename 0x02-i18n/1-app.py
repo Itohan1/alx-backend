@@ -27,7 +27,7 @@ def d_locale():
 def first_method():
     """html template"""
 
-    render.template('1-index.html')
+    return render_template('1-index.html')
 
 
 if __name__ == '__main__':
